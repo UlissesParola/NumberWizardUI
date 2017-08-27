@@ -20,19 +20,19 @@ public class DifficultHandler : MonoBehaviour {
 	public void Easy()
 	{
 		difficult.text = "Easy";
-		GameData.maxGuesses = 8;
+		GameData.maxGuesses = 9;
 	}
 
 	public void Normal()
 	{
 		difficult.text = "Normal";
-		GameData.maxGuesses = 13;
+		GameData.maxGuesses = 12;
 	}
 
 	public void Hard()
 	{
 		difficult.text = "Hard";
-		GameData.maxGuesses = 18;
+		GameData.maxGuesses = 15;
 	}
 		
 }

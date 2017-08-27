@@ -34,7 +34,7 @@ public class NumberWizard : MonoBehaviour {
 
 	public void GuessLower()
 	{
-		max = guess;
+		max = guess -1;
 		Guess();	
 	}
 				
@@ -47,7 +47,7 @@ public class NumberWizard : MonoBehaviour {
 			SceneManager.LoadScene ("Win");
 		}
 
-		if (guess > 1000) 
+		if (guess > 1000 || guess < 1) 
 		{
 			SceneManager.LoadScene ("Lose");
 			return;
